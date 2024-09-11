@@ -1,0 +1,79 @@
+.grid {
+    margin: 100px 0 0;
+  }
+ /* pathfind.css */
+
+/* Styling the grid */
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f0f4f7;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Styling each row */
+  .grid > div {
+    display: flex;
+  }
+  
+  /* Styling the nodes */
+  .node {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+    margin: 1px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .node-visited {
+    background-color: #ffe6e6;
+  }
+  
+  .node-shortest-path {
+    background-color: #66ff66;
+  }
+  
+  .node-start {
+    background-color: #4caf50;
+  }
+  
+  .node-finish {
+    background-color: #f44336;
+  }
+  
+  .node-wall {
+    background-color: #000;
+  }
+  
+  /* Button styles */
+  button {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #f06595, #cc5de8, #ff6b6b);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px);
+  }
+  
